@@ -489,6 +489,32 @@ a {
     max-width: 976px;
   }
 
+.wrapper--no-pading-until-medium {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+@media (min-width: 800px) {
+
+.wrapper--no-pading-until-medium {
+      padding-left: 18px;
+      padding-right: 18px
+  }
+  }
+
+.wrapper--no-pading-until-large {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+@media (min-width: 1010px) {
+
+.wrapper--no-pading-until-large {
+      padding-left: 18px;
+      padding-right: 18px
+  }
+  }
+
 .wrapper--b-margin {
     margin-bottom: 1rem;
   }
@@ -669,14 +695,58 @@ a {
     color: #fff;
   }
 
+.page-section--testimoials {
+    background-color: #e0e6ef;
+  }
+
+@media (min-width: 1010px) {
+
+.page-section--testimoials {
+      background-image: url('/assets/images/testimonials-bg.jpg');
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat
+  }
+  }
+
+.page-section--no-b-paddng-until-medium {
+    padding-bottom: 0;
+  }
+
+@media (min-width: 800px) {
+
+.page-section--no-b-paddng-until-medium {
+      padding-bottom: 4.5rem
+  }
+  }
+
+.page-section--no-b-paddng-until-large {
+    padding-bottom: 0;
+  }
+
+@media (min-width: 1010px) {
+
+.page-section--no-b-paddng-until-large {
+      padding-bottom: 4.5rem
+  }
+  }
+
 .row:after {
     content: '';
     clear: both;
     display: table;
   }
 
+.row--t-padding {
+    padding-top: 80px;
+  }
+
 .row--gutters {
     margin-right: -65px;
+  }
+
+.row--gutters-small {
+    margin-right: -45px;
   }
 
 .row--gutters-large {
@@ -685,6 +755,10 @@ a {
 
 .row--gutters > div {
     padding-right: 65px;
+  }
+
+.row--gutters-small > div {
+    padding-right: 45px;
   }
 
 .row--gutters-large > div {
@@ -726,6 +800,72 @@ a {
       width: 63%;
     }
   }
+
+@media (min-width: 1010px) {
+
+    .row__b-magin-until-large {
+      margin-bottom: 0;
+    }
+
+    .row__large-4 {
+      float: left;
+      width: 33.33%;
+    }
+
+    .row__large-4--larger {
+      float: left;
+      width: 37%;
+    }
+
+    .row__large-6 {
+      float: left;
+      width: 50%;
+    }
+
+    .row_large-8 {
+      float: left;
+      width: 66.66%;
+    }
+
+    .row__large-8--smaller {
+      float: left;
+      width: 63%;
+    }
+  }
+
+/* equal height rules */
+
+@media (min-width: 800px) {
+
+.row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+  }
+  }
+
+.row--equal-height-at-medium > div {
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+@media (min-width: 1010px) {
+
+.row--equal-height-at-large {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+  }
+  }
+
+.row--equal-height-at-large > div {
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
 
 .generic-content-container p {
     margin: 0 0 1.8rem 0;
@@ -771,11 +911,17 @@ a {
 @media (min-width: 530px) {
 
 .section-title__icon {
+      position: relative;
+      top: 8px;
       margin-right: 0.5rem;
       margin-left: 0;
       margin: 0;
       display: inline-block
   }
+  }
+
+.section-title--blue {
+    color: #2f5572;
   }
 
 .feature-item {
@@ -818,4 +964,53 @@ a {
       font-size: 1.875rem;
       text-align: left
   }
+  }
+
+.testimoial {
+  padding: 18px;
+  padding-top: 0;
+  padding-bottom: 1px;
+  margin-bottom: 98px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 1010px) {
+
+.testimoial {
+    padding-left: 1.8125rem;
+    padding-right: 1.8125rem;
+    margin-bottom: 0
+}
+  }
+
+.testimoial--last {
+    margin-bottom: 0;
+  }
+
+.testimoial__photo {
+    position: relative;
+    top: -80px;
+    margin: 0 auto;
+    margin-bottom: -80px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid rgba(255, 255, 255, 0.75);
+  }
+
+.testimoial__title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2f5572;
+    text-align: center;
+  }
+
+.testimoial__subtitle {
+    margin: .25rem 0 1rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #d28f39;
+    text-align: center;
   }
